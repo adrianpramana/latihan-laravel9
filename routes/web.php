@@ -14,15 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 // Route::get('/', fn () => view('welcome')); // Support PHP 7.4
-Route::view('/', 'home');
-$appName = "Laravel 9";
-Route::view('/', 'home', [
-    'appName' => $appName
-]);
 
-Route::get('profile', function () {
-    $name = "Adrian";
-    return view('profile', [
-        'name' => $name
-    ]);
-});
+Route::get('/', fn () => view('home'));
+Route::view('contact', 'contact');
+Route::view('posts/first-post', 'posts.show');
