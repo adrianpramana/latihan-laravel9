@@ -1,18 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
+@extends('layouts.app', ['title' => 'Homepage'])
 
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=7">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="csrf-token" content="{{ csrf_token() }}">
-    <title>Home</title>
-    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
-</head>
-
-<body>
-    This is home page.
-    <script src="{{ asset('js/app.js') }}"></script>
-</body>
-
-</html>
+@section('content', 'Ini adalah halaman Beranda')
