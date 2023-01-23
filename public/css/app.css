@@ -22,5 +22,19 @@ a:hover {
 
 .navbar li a {
     padding: 10px;
-    display: block;
+    display: inline-block;
+}
+
+.alert {
+    background: indianred;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.alert-header {
+    background: khaki;
+    color: black;
+    padding: 10px;
+    border-radius: 10px;
 }
